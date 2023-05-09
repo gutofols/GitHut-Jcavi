@@ -1,0 +1,10 @@
+Aula sobre Orientação a objetos:
+
+Principais tipos de Variáveis:
+// String
+// Number
+// Array
+// Boolean
+
+Devemos criar Funções, que chamam funções. E usar os MENUS para navegar entre as mesmas.
+
