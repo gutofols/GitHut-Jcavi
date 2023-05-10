@@ -24,7 +24,6 @@ function cadastrarCarro() {
     let cor = prompt('Digite a cor')
     let ano = prompt('Digite a ano')
 
-    debugger
     let carro = {
         placa,
         cor: cor,
