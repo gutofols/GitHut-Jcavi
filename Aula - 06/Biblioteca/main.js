@@ -15,8 +15,9 @@
         // ⦁ A exclusão deve ser feita pelo código do livro;
 
         //Variáveis universais: 
-    let livros = [];
-
+        
+        let livros = [];
+        let livro = {};
 
 
 menuInicial() // iniciamos nosso menu, e nosso sistema nesta linha.
@@ -61,7 +62,7 @@ function menuInicial(){
         let titulo = prompt('Digite o título do livro: ')
         let categoria = prompt('Digite o categoria do livro: ')
 
-        let livro = {
+        livro = {
             codigo: codigo,
             titulo: titulo,
             categoria: categoria,
@@ -87,7 +88,6 @@ function pesquisaLivro(){
         `)
         menuInicial()
         }
-
     }   
     alert("Livro não cadastrado!")
     menuInicial()     
@@ -98,12 +98,12 @@ function pesquisaLivro(){
 // Função de (3) excluirLivro: OK      
 // ===============================
     function excluirLivro(){
-        let codigoPesquisa = prompt('Digite o codigo do livro que quer excluir: ')
+        let codigoPesquisa = parseInt(prompt('Digite o codigo do livro que quer excluir: '))
         for (let i = 0; i < livros.length; i++) {
             let livro = livros[i];
             
         if (codigoPesquisa == livro.codigo) {
-            livros.splice(livro,1)
+            livros.splice(livro, 1)
             menuInicial
             }
         }   
